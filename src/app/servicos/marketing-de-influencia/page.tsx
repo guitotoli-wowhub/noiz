@@ -5,10 +5,10 @@ import { ArrowLeft, Users, TrendingUp, Target, Sparkles, BarChart3, Globe, Insta
 import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
-import iasminOdaImage from '@/assets/influencers/iasmin_oda.jpeg';
-import isabelaLeeImage from '@/assets/influencers/isabela_lee.jpeg';
-import kimEPipiImage from '@/assets/influencers/kim_e_pipi.jpeg';
-import apontamosImage from '@/assets/influencers/apontamos.jpeg';
+import iasminOdaImage from '@/assets/influencer-iasmin.jpeg';
+import isabelaLeeImage from '@/assets/influencer-isabela.jpeg';
+import kimEPipiImage from '@/assets/influencer-kim.jpeg';
+import apontamosImage from '@/assets/influencer-apontamos.jpeg';
 
 export default function MarketingInfluenciaPage() {
     const subServicos = [

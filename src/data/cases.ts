@@ -1,35 +1,35 @@
 import { MessageCircle, Eye, Heart, ThumbsUp, Target, Building2, ShoppingBag, Ticket, ChefHat, Cat, Users } from 'lucide-react';
 
 // Images
-import mequiHeroImage from '@/assets/5f13af2b4078256a0a60e306502aae0ba9c8230f.png';
-import mequiImage2 from '@/assets/b4d00c2abe42d6a94e730d29d1bd6226f640ade1.png';
-import mequiImage3 from '@/assets/96653ed383644b8614ddc8442972bc17b5bd68e8.png';
+import mequiHeroImage from '@/assets/mequi-hero.png';
+import mequiImage2 from '@/assets/mequi-01.png';
+import mequiImage3 from '@/assets/mequi-02.png';
 
 // Avon Moranguinho images
-import avonHeroImage from '@/assets/2a4caed6705afbeb371092d7aee126db4e336f32.png';
-import avonImage1 from '@/assets/d77cf22a4c73cd365ed2776f9da7dc3e0bb6ed15.png';
-import avonImage2 from '@/assets/6a65384ed5c0849893dc8524681e0b10a924b5d9.png';
-import avonPrint01 from '@/assets/cases/avon-moranguinho/print_01.png';
-import avonPrint02 from '@/assets/cases/avon-moranguinho/print_02.png';
-import avonMoranguinhoClose from '@/assets/cases/avon-moranguinho/moranguinho_close.png';
-import osangCapa from '@/assets/cases/osang-cosmetic/capa.png';
-import osang01 from '@/assets/cases/osang-cosmetic/01.png';
-import osang02 from '@/assets/cases/osang-cosmetic/02.png';
+import avonHeroImage from '@/assets/avon-hero.png';
+import avonImage1 from '@/assets/avon-01.png';
+import avonImage2 from '@/assets/avon-02.png';
+import avonPrint01 from '@/assets/case-avon-print-01.png';
+import avonPrint02 from '@/assets/case-avon-print-02.png';
+import avonMoranguinhoClose from '@/assets/case-avon-close.png';
+import osangCapa from '@/assets/case-osang-hero.png';
+import osang01 from '@/assets/case-osang-01.png';
+import osang02 from '@/assets/case-osang-02.png';
 
 // Hellmann's Images
-import hellmannsCapa from '@/assets/cases/hellmanns/Capa.png';
-import hellmanns01 from '@/assets/cases/hellmanns/01.png';
-import hellmanns02 from '@/assets/cases/hellmanns/02.png';
+import hellmannsCapa from '@/assets/case-hellmanns-hero.png';
+import hellmanns01 from '@/assets/case-hellmanns-01.png';
+import hellmanns02 from '@/assets/case-hellmanns-02.png';
 
 // Atacadão Images
-import atacadaoCapa from '@/assets/cases/atacadao/Capa.png';
-import atacadao01 from '@/assets/cases/atacadao/01.png';
-import atacadao02 from '@/assets/cases/atacadao/02.png';
+import atacadaoCapa from '@/assets/case-atacadao-hero.png';
+import atacadao01 from '@/assets/case-atacadao-01.png';
+import atacadao02 from '@/assets/case-atacadao-02.png';
 
 // Cia da Natureza Images
-import ciaCapa from '@/assets/cases/cia-da-natureza/Capa.png';
-import cia01 from '@/assets/cases/cia-da-natureza/01.png';
-import cia02 from '@/assets/cases/cia-da-natureza/02.png';
+import ciaCapa from '@/assets/case-cia-hero.png';
+import cia01 from '@/assets/case-cia-01.png';
+import cia02 from '@/assets/case-cia-02.png';
 
 export const caseData = {
     'avon-moranguinho': {

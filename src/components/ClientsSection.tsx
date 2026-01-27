@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 // Import logo SVG paths from Figma
 import svgPaths from '../imports/svg-ozt4ipq5b3';
 // Import PNG logos
-import avonLogo from '@/assets/09291840f03dd89fc00bf23e895fa6feb2c866c2.png';
-import rakutenLogo from '@/assets/342162b937db95afee91c6b3d254c3f14eecc05f.png';
-import naturaLogo from '@/assets/2baefc042c6244077b8989b2028320245498b2dd.png';
+import avonLogo from '@/assets/logo-avon.png';
+import rakutenLogo from '@/assets/logo-rakuten.png';
+import naturaLogo from '@/assets/logo-natura.png';
 
 const logos = [
   { id: 'netflix', name: 'Netflix', path: svgPaths.p1e09d8a8, viewBox: '0 0 1024 277', width: 180, type: 'svg' },

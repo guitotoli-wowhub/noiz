@@ -9,15 +9,15 @@ import Footer from '@/components/Footer';
 
 // Importing images
 import mequiBT21Image from '@/assets/d0df83858521cef99b468f431688439881e05aff.png';
-import avonMoranguinhoImage from '@/assets/0aac566939b53c1c279e42332c4d6dc6b7dede57.png';
+import avonMoranguinhoImage from '@/assets/case-avon-thumb.png';
 
-import osangCapa from '@/assets/cases/osang-cosmetic/capa.png';
+import osangCapa from '@/assets/case-osang-hero.png';
 
-import hellmannsCapa from '@/assets/cases/hellmanns/Capa.png';
+import hellmannsCapa from '@/assets/case-hellmanns-hero.png';
 
-import atacadaoCapa from '@/assets/cases/atacadao/Capa.png';
+import atacadaoCapa from '@/assets/case-atacadao-hero.png';
 
-import ciaCapa from '@/assets/cases/cia-da-natureza/Capa.png';
+import ciaCapa from '@/assets/case-cia-hero.png';
 
 // Manually defining cases array to ensure consistency with CasesSection
 const cases = [

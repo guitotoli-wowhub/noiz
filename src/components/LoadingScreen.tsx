@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useEffect, useState } from 'react';
-import noizLogo from '@/assets/a25a5e25188528eb6b2997afe2f73f03504c6248.png';
+import noizLogo from '@/assets/logo.png';
 
 interface LoadingScreenProps {
   onLoadingComplete: () => void;
