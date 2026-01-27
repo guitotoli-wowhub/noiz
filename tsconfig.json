@@ -37,6 +37,7 @@
   ],
   "exclude": [
     "node_modules",
-    "Layout de serviços"
+    "Layout de serviços",
+    "Layout de servi\u00e7os"
   ]
 }
