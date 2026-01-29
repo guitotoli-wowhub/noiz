@@ -9,7 +9,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: [process.env.CONTACT_EMAIL || 'guilherme.totoli@gmail.com'],
+      to: [process.env.CONTACT_EMAIL || 'gui@wowhub.digital'],
       replyTo: email,
       subject: `Novo contato do site: ${name} (${company})`,
       html: `
