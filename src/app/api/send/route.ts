@@ -4,15 +4,15 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
-    try {
-        const { name, email, company, message } = await request.json();
+  try {
+    const { name, email, company, message } = await request.json();
 
-        const data = await resend.emails.send({
-            from: 'onboarding@resend.dev',
-            to: ['oi@noizassessoria.com'],
-            replyTo: email,
-            subject: `Novo contato do site: ${name} (${company})`,
-            html: `
+    const data = await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: [process.env.CONTACT_EMAIL || 'guilherme.totoli@gmail.com'],
+      replyTo: email,
+      subject: `Novo contato do site: ${name} (${company})`,
+      html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #FF00FF;">Novo Lead do Site</h2>
           <p><strong>Nome:</strong> ${name}</p>
@@ -25,10 +25,10 @@ export async function POST(request: Request) {
           </div>
         </div>
       `,
-        });
+    });
 
-        return NextResponse.json(data);
-    } catch (error) {
-        return NextResponse.json({ error }, { status: 500 });
-    }
+    return NextResponse.json(data);
+  } catch (error) {
+    return NextResponse.json({ error }, { status: 500 });
+  }
 }
