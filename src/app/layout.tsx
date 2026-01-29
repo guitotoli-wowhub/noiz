@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         default: 'Noiz Assessoria',
     },
     description: "Assessoria que gera resultados através de inteligência cultural e marketing de influência.",
-    metadataBase: new URL('https://noiz.com.br'),
+    metadataBase: new URL('https://noizassessoria.com'),
     openGraph: {
         title: 'Noiz Assessoria',
         description: 'Assessoria que gera resultados através de inteligência cultural e marketing de influência.',
@@ -16,6 +16,9 @@ export const metadata: Metadata = {
         siteName: 'Noiz Assessoria',
         locale: 'pt_BR',
         type: 'website',
+    },
+    icons: {
+        icon: '/favicon.png',
     },
 };
 
