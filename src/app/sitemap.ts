@@ -12,6 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/servicos/consultoria-de-growth',
         '/servicos/tecnologia-e-automacao',
         '/contato',
+        '/estudos',
+        '/materiais/estado-da-influencia',
+        '/materiais/estado-da-influencia-parte-2',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),

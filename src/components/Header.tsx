@@ -27,6 +27,7 @@ export default function Header({ activeSection = '', onNavigate }: HeaderProps) 
   const menuItems = [
     { id: 'services', label: 'serviços' },
     { id: 'cases', label: 'cases' },
+    { id: 'estudos', label: 'estudos' },
     { id: 'contact', label: 'contato' }
   ];
 
@@ -94,6 +95,17 @@ export default function Header({ activeSection = '', onNavigate }: HeaderProps) 
           >
             cases
           </motion.button>
+
+          <Link href="/estudos">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`text-sm font-medium transition-colors duration-200 ${activeSection === 'estudos' || pathname === '/estudos' ? 'text-[#FF00FF]' : 'text-gray-300 hover:text-white'
+                }`}
+            >
+              estudos & pesquisas
+            </motion.button>
+          </Link>
 
           <Link href="/contato">
             <motion.button
