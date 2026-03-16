@@ -1,10 +1,12 @@
 "use client";
 // Force rebuild
 
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
+import { Menu, X } from 'lucide-react';
+import React, { useState } from 'react';
 import noizLogo from '@/assets/logo.png';
 
 interface HeaderProps {
@@ -16,8 +18,12 @@ export default function Header({ activeSection = '', onNavigate }: HeaderProps) 
   const pathname = usePathname();
   const router = useRouter();
   const isHome = pathname === '/';
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleNavigation = (id: string) => {
+  const handleNavigation = (id: string, isMobile = false) => {
+    if (isMobile) {
+      setIsMobileMenuOpen(false);
+    }
     if (isHome && onNavigate) {
       onNavigate(id);
     } else {
@@ -118,7 +124,75 @@ export default function Header({ activeSection = '', onNavigate }: HeaderProps) 
             </motion.button>
           </Link>
         </nav>
+
+        {/* Hamburger Icon for Mobile */}
+        <button
+          className="md:hidden text-white p-2"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden mt-4 bg-black/95 border border-white/10 rounded-2xl overflow-hidden flex flex-col backdrop-blur-md"
+          >
+            {/* Services (Mobile) */}
+            <div className="flex flex-col border-b border-zinc-800">
+              <span className="px-6 py-4 text-sm font-bold text-zinc-500 uppercase">Serviços</span>
+              <Link
+                href="/servicos/marketing-de-influencia"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-6 py-3 text-white font-medium text-sm hover:text-[#FF00FF] hover:bg-white/5 transition-colors"
+              >
+                Marketing de Influência
+              </Link>
+              <Link
+                href="/servicos/consultoria-de-growth"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-6 py-3 text-white font-medium text-sm hover:text-[#FF00FF] hover:bg-white/5 transition-colors"
+              >
+                Consultoria de Growth
+              </Link>
+              <Link
+                href="/servicos/tecnologia-e-automacao"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-6 py-3 text-white font-medium text-sm hover:text-[#FF00FF] hover:bg-white/5 transition-colors"
+              >
+                Tecnologia e Automação
+              </Link>
+            </div>
+
+            <button
+              onClick={() => handleNavigation('cases', true)}
+              className="px-6 py-4 text-left text-white font-medium hover:text-[#FF00FF] transition-colors border-b border-zinc-800"
+            >
+              Cases
+            </button>
+            <Link
+              href="/estudos"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="px-6 py-4 text-left text-white font-medium hover:text-[#FF00FF] transition-colors border-b border-zinc-800"
+            >
+              Estudos & Pesquisas
+            </Link>
+            <Link
+              href="/contato"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="px-6 py-4 text-left text-white font-medium hover:text-[#FF00FF] transition-colors"
+            >
+              Contato
+            </Link>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 }

@@ -106,7 +106,7 @@ export default function EbookEstadoDaInfluencia() {
                                     <option value="Influenciador">Sou Influenciador/Criador</option>
                                     <option value="Agência">Trabalho em Agência</option>
                                     <option value="Marketing/Growth">Trabalho com Marketing/Growth</option>
-                                    <option value="Estudante/Outros">Estudante / Outros</option>
+                                    <option value="Outros">Outros</option>
                                 </select>
                             </div>
 
