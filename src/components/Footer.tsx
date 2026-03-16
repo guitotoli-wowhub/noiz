@@ -19,7 +19,9 @@ export default function Footer() {
 
         <div className="flex items-center gap-6">
           <motion.a
-            href="#"
+            href="https://www.instagram.com/noizassessoria/"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.2, color: '#FF00FF' }}
             whileTap={{ scale: 0.9 }}
             className="text-white hover:text-accent-pink transition-colors"
@@ -29,7 +31,9 @@ export default function Footer() {
           </motion.a>
 
           <motion.a
-            href="#"
+            href="https://www.linkedin.com/company/noiz-assessoria/"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.2, color: '#9D00FF' }}
             whileTap={{ scale: 0.9 }}
             className="text-white hover:text-accent-violet transition-colors"
